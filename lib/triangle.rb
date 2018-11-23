@@ -22,16 +22,16 @@ class Triangle
        end ## if_error
 
      elsif @a == @b && @a == @c
-       @type = :equilateral
+       return :equilateral
      elsif @a == @b ||
        @b == @c ||
        @a == @c then
 
-       @type = :isosceles
+       :isosceles
 
      else
-       @type = :scalene
-
+       :scalene
+       
      end ## if_else end
   end ## def_kind
 
