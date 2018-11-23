@@ -18,7 +18,6 @@ class Triangle
 
        begin
          raise TriangleError
-       rescue TriangleError => error
        end ## if_error
 
      elsif @a == @b && @a == @c
@@ -27,11 +26,11 @@ class Triangle
        @b == @c ||
        @a == @c then
 
-       :isosceles
+       return :isosceles
 
      else
-       :scalene
-       
+       return :scalene
+
      end ## if_else end
   end ## def_kind
 
