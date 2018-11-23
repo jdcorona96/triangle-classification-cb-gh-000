@@ -12,9 +12,9 @@ class Triangle
   attr_reader :type
 
   def kind
-    if @a+@b < @c ||
-       @b+@c < @a ||
-       @a+@c < @b then
+    if @a+@b <= @c ||
+       @b+@c <= @a ||
+       @a+@c <= @b then
 
        begin
          raise TriangleError
