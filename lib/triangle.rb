@@ -19,10 +19,14 @@ class Triangle
        begin
          raise TriangleError
        rescue TriangleError => error
-         puts error.
        end ## if_error
 
      else
      end ## if_else end
   end ## def_kind
+
+  class TriangleError < StandardError
+  end
+
+  
 end # class Triangle
