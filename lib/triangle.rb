@@ -21,12 +21,22 @@ class Triangle
        rescue TriangleError => error
        end ## if_error
 
+     elsif @a == @b && @a == @c
+       @type = :equilateral
+     elsif @a == @b ||
+       @b == @c ||
+       @a == @c then
+
+       @type = :isosceles
+
      else
+       @type = :scalene
+       
      end ## if_else end
   end ## def_kind
 
   class TriangleError < StandardError
   end
 
-  
+
 end # class Triangle
