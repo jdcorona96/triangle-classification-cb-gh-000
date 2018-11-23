@@ -31,7 +31,7 @@ class Triangle
 
      else
        @type = :scalene
-       
+
      end ## if_else end
   end ## def_kind
 
