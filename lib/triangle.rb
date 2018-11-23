@@ -8,7 +8,8 @@ class Triangle
     
   end
 
-  attr_accessor :a, :b, :c, :type
+  attr_accessor :a, :b, :c
+  attr_reader :type
 
   def kind
     
